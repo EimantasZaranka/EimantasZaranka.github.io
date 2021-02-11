@@ -1,8 +1,11 @@
-import sys
+import sys, os
 from flask import Flask, render_template
 from flask_frozen import Freezer
 
 app = Flask(__name__)
+
+app.config['FREEZER_DESTINATION'] = "doc"
+
 freezer = Freezer(app)
 
 @app.route('/')
