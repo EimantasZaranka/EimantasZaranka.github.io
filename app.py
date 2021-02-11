@@ -4,7 +4,7 @@ from flask_frozen import Freezer
 
 app = Flask(__name__)
 
-app.config['FREEZER_DESTINATION'] = "doc"
+app.config['FREEZER_DESTINATION'] = "docs"
 
 freezer = Freezer(app)
 
